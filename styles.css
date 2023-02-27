@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  font-family: Raleway;
+}
+
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+
+
+html,body {
+  background-color: #F6E6C2;
+  height: 100%;
+  margin: 0;
+}
+
+.grid-container {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  display: grid;
+}
+
+.grid-item {
+  position: relative;
+  padding-top: 50px;
+  padding: 20px;
+  background-color: #FFAACF;
+  border: 1px solid purple;
+}
+
+.grid-item:nth-child(odd) {
+  background-color: #B9F3E4;
+
+}
+
+.grid-item::before{
+  content: 'Grid item';
+  position: absolute;
+  font-size: 25px;
+  font-weight:bold;
+  top: 10px;
+  left: 15px;
+}
